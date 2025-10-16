@@ -19,7 +19,7 @@ return {
         path = '~/Documents/obsidian_notes/',
       },
     },
-
+    frontmatter = { enabled = false },
     -- see below for full list of options 👇
   },
 }
