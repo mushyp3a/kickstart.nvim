@@ -57,3 +57,9 @@ vim.keymap.set('i', 'jk', '<Esc>')
 
 vim.keymap.set('n', '<leader>t', ':terminal<CR>', opts)
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', opts)
+
+-- Move current file to folders
+vim.keymap.set('n', '<leader>1', ':!mv % keep/<cr>:bd<cr>') -- Keep
+vim.keymap.set('n', '<leader>2', ':!mv % ~/Documents/obsidian_notes/6-notes/archive/maths/<cr>:bd<cr>') -- Archive
+vim.keymap.set('n', '<leader>3', ':!mv % ~/Documents/obsidian_notes/6-notes/archive/compsci/<cr>:bd<cr>') -- Delete
+--vim.keymap.set('n', '<leader>4', ':!mv % combine/<cr>:bd<cr>') -- Combine
